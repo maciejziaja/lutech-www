@@ -1,0 +1,31 @@
+{
+  "name": "lutech-www",
+  "version": "0.0.1",
+  "description": "Website - www.lu-tech.pl",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maciejziaja/lutech-www.git"
+  },
+  "keywords": [
+    "www",
+    "lutech",
+    "lu",
+    "tech",
+    "lu-tech",
+    "javascript",
+    "frontend"
+  ],
+  "author": "Maciej Ziaja",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maciejziaja/lutech-www/issues"
+  },
+  "homepage": "https://github.com/maciejziaja/lutech-www#readme",
+  "devDependencies": {
+    "surge": "^0.18.0"
+  }
+}
