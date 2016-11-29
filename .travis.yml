@@ -1,8 +1,6 @@
 language: node_js
 node_js:
-  - "node"
+  - 6
 
-deploy:
-  provider: surge
-  project: ./dist/
-  domain: thirsty-whistle.surge.sh 
+script: npm test
+after_success: npm run deploy

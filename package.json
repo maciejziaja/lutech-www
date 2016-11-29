@@ -4,7 +4,8 @@
   "description": "Website - www.lu-tech.pl",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\""
+    "test": "echo \"Error: no test specified\"",
+    "deploy": "surge -d thirsty-whistle.surge.sh dist"
   },
   "repository": {
     "type": "git",
