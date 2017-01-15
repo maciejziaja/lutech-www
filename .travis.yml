@@ -3,5 +3,13 @@ node_js:
   - 6
 
 script: npm run build
-after_success:
-  - if [[ "${TRAVIS_BRANCH}" == "master" && "${TRAVIS_PULL_REQUEST}" == "false" ]]; then npm run deploy -s; fi
+
+deploy:
+  provider: s3
+  access_key_id: "AKIAIUJH7YPKVR4UHFUQ"
+  bucket: "lu-tech"
+  skip_cleanup: true
+  local_dir: dist
+  acl: public_read
+  on:
+    branch: b-travis-integration
