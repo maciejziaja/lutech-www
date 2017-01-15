@@ -1,13 +1,13 @@
 language: node_js
 node_js:
-  - 6
-
+- 6
 script: npm run build
-
 deploy:
   provider: s3
-  access_key_id: "AKIAIUJH7YPKVR4UHFUQ"
-  bucket: "lu-tech"
+  access_key_id: AKIAIUJH7YPKVR4UHFUQ
+  secret_access_key:
+    secure: JKlEhvG27Re5VaBezQP4i9fK0+/LN44R64JpAvWanN3/XV4Z3wiPzP5WDVdnEuRXJ16Pg2TF7pj0h2Av8rcotTspi3pgsPmOFhoFJv6wV3LHWy2Ni5u9cy1hALJUbEPT4g7AWqMxPkXMgiaxb3sPeFkGsmcyI5y/I/1Zrbu8GAZuDa2pdmxoV1oUeWxXyWIc8X8pAPq6TFPddcK0s2Een3+20m/qZWR/4AeoMMKxsAWO6/coFhLaM4AGzcLwEIPzFtpHQUxI7QueLJmG+JppRARYrLVQOoHcNn+hWk0FkskykPuSOn73edpQXgiDtffZDSKwFaXYddVWw581N7mtPV7ubXlyaJfpPMb2xMJFk0ZQVCfrYPU+1PP+Eq3M260Co1r/W+fe2AEORinzyiIwq4LP5R/e5BT/wMZLTPG85QH5L7ylOXn7pWnHFHzYBou0TsteW3IrluDbMiiNbqU42nYK/W4xv2NqKuyknXq2Mkp1bNjx0CX0TdtQRtKb5FdHKPBD3IUwn/s7FBrfHzJ96xhVY79HQOhwFize3/ohLbVrWj+4DVNU7YHY6g1wr22GSAIQKlhPrh7berXqcn5gt8LFQtnTXXHCa5BuRAWhKa4QBB1JoEBJUczMMKoALRstWW5BGJUtRAcNo9yLGAHoArdpeiNiyFfhmGLge5Nzp7s=
+  bucket: lu-tech
   skip_cleanup: true
   local_dir: dist
   acl: public_read
