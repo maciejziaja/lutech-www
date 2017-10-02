@@ -1,0 +1,17 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  color: #444;
+  background-color: #F38630;
+}
+
+#___gatsby {
+  height: 100%;
+}
+
+
