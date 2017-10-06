@@ -1,4 +1,8 @@
 module.exports = {
+  siteTitle: 'Lu-Tech',
+  siteDescription: 'Lu-Tech Maciej Ziaja. Software developer',
+  siteKeyword: 'lu-tech, front-end, front, fe, it, software development, gatsbyjs',
+  siteLang: 'en',
   socials: [
     {
       name: 'github',

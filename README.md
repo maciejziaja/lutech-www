@@ -1,5 +1,5 @@
-# Lu-Tech Website
+# My website
 
-This is source code of www.lu-tech.pl website
+This is source code of [lu-tech.pl](https://www.lu-tech.pl) website
 
-It uses gatsbyjs static site generator
+It uses [GatsbyJS](https://www.gatsbyjs.org) static site generator
