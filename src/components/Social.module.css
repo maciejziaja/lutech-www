@@ -1,11 +1,15 @@
 .link {
   display: inline-block;
-  width: 2rem;
-  height: 2rem;
+  opacity: .7;
+  transition: opacity .2s ease-in-out;
+}
+
+.link:hover {
+  opacity: 1;
 }
 
 .link + .link {
-  margin-left: .5rem;
+  margin-left: 1rem;
 }
 
 .logo {

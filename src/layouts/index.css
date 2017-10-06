@@ -4,9 +4,13 @@ html, body {
 }
 
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: sans-serif;
   color: #444;
   background-color: #F38630;
+}
+
+body.ubuntu {
+  font-family: 'Ubuntu', sans-serif;
 }
 
 #___gatsby {
