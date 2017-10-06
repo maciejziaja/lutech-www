@@ -1,0 +1,16 @@
+.title {
+  margin: 0 0 1rem 0;
+  font-size: 2rem;
+  line-height: 1.25em;
+}
+
+.text {
+  margin: 0 0 .5rem 0;
+  font-size: 1rem;
+  line-height: 1.5em;
+}
+
+.socials {
+  margin: 1rem;
+}
+

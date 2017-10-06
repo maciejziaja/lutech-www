@@ -13,7 +13,7 @@ const PORT = ENV.FTP_SERVER_PORT || 21;
 
 const client = new Client();
 
-const DeployFromPath = pathBase => {
+const deployFromPath = pathBase => {
   const fileList = fs.readdirSync(pathBase);
 
   fileList.forEach(fileName => {
@@ -23,13 +23,13 @@ const DeployFromPath = pathBase => {
 
     if (isDirectory) {
       client.mkdir(`${TARGET_PATH}${relative}`, true, err => {
-        if (err) console.log(chalk.red('mkdir'));
-        else DeployFromPath(filePath);
+        if (err) console.log(chalk.red('cannot make directory'), err);
+        else deployFromPath(filePath);
       });
     }
     else if (!filePath.endsWith('.map')) {
       client.put(filePath, `${TARGET_PATH}${relative}`, err => {
-        if (err) console.log(chalk.red('put'));
+        if (err) console.log(chalk.red('cannot upload file'), err);
 
         console.log(chalk.green('file uploaded'), relative);
       });
@@ -39,9 +39,9 @@ const DeployFromPath = pathBase => {
   client.end();
 };
 
-const CleanUpRemote = () => {
+const cleanUpRemote = () => {
   client.list(TARGET_PATH, (err, list) => {
-    if (err) console.log(chalk.red('error'), err);
+    if (err) console.log(chalk.red('cannot list files'), err);
 
     list.forEach(item => {
       const deletePath = `${TARGET_PATH}/${item.name}`;
@@ -52,14 +52,14 @@ const CleanUpRemote = () => {
 
       if (item.type === 'd') {
         client.rmdir(deletePath, true, err => {
-          if (err) console.log(chalk.red('rmdir'), err);
+          if (err) console.log(chalk.red('cannot remove directory'), err);
 
           console.log(chalk.blue('dir removed'), deletePath);
         });
       }
       else if (item.type === '-') {
         client.delete(deletePath, err => {
-          if (err) console.log(chalk.red('delete'), err);
+          if (err) console.log(chalk.red('cannot delete file'), err);
 
           console.log(chalk.blue('file removed'), deletePath);
         });
@@ -79,10 +79,10 @@ client.on('ready', () => {
   console.log(chalk.blue('connection established'));
 
   if (process.argv.length > 2 && process.argv[2] === 'cleanup') {
-    CleanUpRemote();
+    cleanUpRemote();
   }
   else {
-    DeployFromPath(BUILD_PATH);
+    deployFromPath(BUILD_PATH);
   }
 });
 

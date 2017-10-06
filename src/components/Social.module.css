@@ -1,0 +1,19 @@
+.link {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+}
+
+.link + .link {
+  margin-left: .5rem;
+}
+
+.logo {
+  width: 2rem;
+  height: 2rem;
+  fill: green;
+}
+
+.logo path {
+  fill: red;
+}
