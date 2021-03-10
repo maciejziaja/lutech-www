@@ -1,0 +1,113 @@
+{
+  "name": "Maciej",
+  "position": "Software Developer",
+  "memo": "Software developer with over 10 year experience. I had the possibility to follow full path of software development. What I value the most is brainstorms at the whiteboard and receiving feedback from stakeholders as soon as possible (MVP). In recent years, I mainly deal with frontend. Privately, a happy husband and dad, willing to spend every moment in the mountains at any season.",
+  "personal": {
+    "fullName": "Maciej Ziaja",
+    "birthDay": "1986-07-07",
+    "relationship": "Married",
+    "nationality": "Polish",
+    "language": "Polish, English"
+  },
+  "contact": {
+    "phone": "+48 724 725 496",
+    "email": "maciek.ziaja@gmail.com",
+    "website": "lu-tech.pl",
+    "address": "Katowice, Poland",
+    "linkedIn": "maciej-ziaja"
+  },
+  "skills": [
+    "Vanilla JS",
+    "TypeScript",
+    "Angular",
+    "Stylus",
+    "Redux",
+    "Jasmine",
+    "Git",
+    "Scrum",
+    "Atlassian",
+    "React",
+    "NodeJS",
+    "GraphQL",
+    "Jest",
+    "Mocha",
+    "Protractor",
+    "Google Functions",
+    "DialogFlow",
+    "Docker",
+    "AngularJS",
+    "SCSS",
+    "NextJS"
+  ],
+  "languages": [
+    {
+      "name": "Polish",
+      "level": "native"
+    },
+    {
+      "name": "English",
+      "level": "intermediate"
+    }
+  ],
+  "experience": [
+    {
+      "period": "Feb 2018 - present",
+      "position": "Senior Frontend Developer",
+      "company": "eSky",
+      "location": "Katowice",
+      "infos": [
+        "Preparation of web applications. Mainly post-sale process and back office solutions",
+        "Handling NodeJS applications with GraphQL support",
+        "WebView support for Android and iOS native apps",
+        "Working on Google Assistant integration ready for Polish lunching day",
+        "Working with CI/CD, cloud orchestrators and monitoring solutions (as user)",
+        "part of technology stack: Angular 2+, Redux, RxJS, Jest, GraphQL, Protractor, Google Functions, DialogFlow, NextJS, React"
+      ]
+    },
+    {
+      "period": "Aug 2014 - Feb 2018",
+      "position": "Frontend Developer",
+      "company": "eSky",
+      "location": "Katowice",
+      "infos": [
+        "Preparation of the HTML/CSS code for websites (including mobile)",
+        "Development of interactive user interface elements in JavaScript",
+        "Taking care of the quality of the code by writing unit tests in JavaScript",
+        "Development of internal libraries and tools used in the process of software fabrication",
+        "part of technology stack: VanillaJS, RequireJS, Angular 1.5/2.x, TypeScript, NodeJs, Jasmine, Mocha, Grunt, Gulp, Webpack, Stylus, GIT, Docker, zeplin.io, Atlassian stuff"
+      ]
+    },
+    {
+      "period": "Mar 2011 - Aug 2014",
+      "position": "Web Developer",
+      "company": "Pimedia",
+      "location": "Katowice",
+      "infos": [
+        "Setting up and using CMSs and e-commerce platforms using both C# and PHP (slicing PSD project, creating template - C#/PHP,CSS,JS, configuration of server, database and domain, contact with customer)",
+        "Creating custom modules for: DotNetNuke, NopCommerce, MojoPortal, Typo3, Wordpress",
+        "Making frontend solutions (sliders, parallax effects, calculators) using jQuery",
+        "Making custom marketing solutions in .NET",
+        "Making .NET webservices for Adobe Flex"
+      ]
+    },
+    {
+      "period": "May 2010 - Feb 2011",
+      "position": "Web Developer",
+      "company": "Internet Contact",
+      "location": "Katowice",
+      "infos": [
+        "Setting up and using CMSs using C# and MSSQL",
+        "Using photoshop (from graphic to html/css/js template)",
+        "Customer contact and technical support",
+        "Work under time pressure"
+      ]
+    }
+  ],
+  "interests": [
+    "mountains",
+    "music",
+    "travel",
+    "financial assets",
+    "science"
+  ]
+}

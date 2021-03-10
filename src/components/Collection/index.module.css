@@ -1,0 +1,27 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.boldList {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+
+.item {
+  white-space: nowrap;
+  margin-right: 1rem;
+  padding-right: 1rem;
+  border-right: .0625rem solid;
+}
+
+.item:last-child {
+  border-right: 0;
+}
