@@ -1,38 +1,30 @@
 {
   "name": "lutech-www",
   "description": "Lu-Tech Website",
-  "version": "0.0.1",
-  "author": "Maciej Ziaja <info@lu-tech.pl>",
-  "dependencies": {
-    "fontfaceobserver": "^2.0.13",
-    "gatsby": "^1.9.45",
-    "gatsby-link": "^1.6.17",
-    "gatsby-plugin-canonical-urls": "^1.0.6",
-    "gatsby-plugin-google-analytics": "^1.0.7",
-    "gatsby-plugin-manifest": "^1.0.8",
-    "gatsby-plugin-offline": "^1.0.9",
-    "gatsby-plugin-react-helmet": "^1.0.5",
-    "gatsby-plugin-react-next": "^1.0.4"
+  "version": "0.1.0",
+  "author": {
+    "name": "Maciej Ziaja",
+    "email": "info@lu-tech.pl"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "main": "n/a",
+  "private": true,
   "scripts": {
-    "prebuild": "rm -rf public/",
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "deploy": "node bin/deploy cleanup && node bin/deploy",
-    "format": "prettier es5 --single-quote --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "12.2.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "chalk": "^2.1.0",
-    "ftp": "^0.3.10",
-    "prettier": "^1.6.1",
-    "prop-types": "^15.6.0",
-    "react": "^16.0.0",
-    "react-helmet": "^5.2.0"
+    "@next/bundle-analyzer": "^12.2.3",
+    "@types/node": "18.0.6",
+    "@types/react": "18.0.15",
+    "@types/react-dom": "18.0.6",
+    "eslint": "8.20.0",
+    "eslint-config-next": "12.2.3",
+    "typescript": "4.7.4"
   }
 }

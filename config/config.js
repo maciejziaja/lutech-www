@@ -3,6 +3,9 @@ module.exports = {
   siteDescription: 'Lu-Tech Maciej Ziaja. Software developer',
   siteKeyword: 'lu-tech, front-end, front, fe, it, software development, gatsbyjs',
   siteLang: 'en',
+  analytics: {
+    measureId: 'UA-21681130-1'
+  },
   socials: [
     {
       name: 'github',
@@ -11,7 +14,7 @@ module.exports = {
     },
     {
       name: 'linkedin',
-      url: 'https://www.linkedin.com/in/maciej-ziaja-44a08a66/',
+      url: 'https://www.linkedin.com/in/maciej-ziaja/',
       description: 'My resume'
     }
   ]

@@ -4,16 +4,12 @@ html, body {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   color: #444;
   background-color: #F38630;
 }
 
-body.ubuntu {
-  font-family: 'Ubuntu', sans-serif;
-}
-
-#___gatsby {
+#__next {
   height: 100%;
 }
 
